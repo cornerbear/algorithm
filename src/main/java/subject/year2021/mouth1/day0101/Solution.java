@@ -40,7 +40,7 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        boolean b = solution.canPlaceFlowers(new int[]{1, 0, 0, 0, 1}, 1);
-        System.out.println(b);
+        boolean bool = solution.canPlaceFlowers(new int[]{1, 0, 0, 0, 1}, 1);
+        System.out.println(bool);
     }
 }
