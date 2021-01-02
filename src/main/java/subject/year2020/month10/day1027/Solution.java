@@ -1,6 +1,6 @@
 package subject.year2020.month10.day1027;
 
-import year2020.MyClass.TreeNode;
+import subject.MyClass.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

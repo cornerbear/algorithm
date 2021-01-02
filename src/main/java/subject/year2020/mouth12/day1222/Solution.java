@@ -1,6 +1,7 @@
 package subject.year2020.mouth12.day1222;
 
-import year2020.MyClass.TreeNode;
+import subject.MyClass.TreeNode;
+import subject.MyClass.TreeNode;
 
 import java.util.*;
 

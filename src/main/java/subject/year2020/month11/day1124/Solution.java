@@ -1,6 +1,6 @@
 package subject.year2020.month11.day1124;
 
-import year2020.MyClass.TreeNode;
+import subject.MyClass.TreeNode;
 
 /**
  * Author : zhangxiaojian
