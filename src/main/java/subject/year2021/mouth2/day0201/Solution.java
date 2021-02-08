@@ -1,4 +1,4 @@
-package subject.year2021.mouth.day0201;
+package subject.year2021.mouth2.day0201;
 
 import java.util.Arrays;
 import java.util.HashSet;
