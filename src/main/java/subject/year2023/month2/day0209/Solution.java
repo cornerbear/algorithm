@@ -9,16 +9,18 @@ import java.util.Map;
  * Subject : 1797. 设计一个验证系统
  * Label :中等 ：设计
  * Describe ：
- * 你是一位系统管理员，手里有一份文件夹列表 folder，你的任务是要删除该列表中的所有 子文件夹，并以 任意顺序 返回剩下的文件夹。
- * <p>
- * 如果文件夹 folder[i] 位于另一个文件夹 folder[j] 下，那么 folder[i] 就是 folder[j] 的 子文件夹 。
- * <p>
- * 文件夹的「路径」是由一个或多个按以下格式串联形成的字符串：'/' 后跟一个或者多个小写英文字母。
- * <p>
- * 例如，"/leetcode" 和 "/leetcode/problems" 都是有效的路径，而空字符串和 "/" 不是。
- * <p>
+ * 你需要设计一个包含验证码的验证系统。每一次验证中，用户会收到一个新的验证码，这个验证码在 currentTime时刻之后 timeToLive秒过期。如果验证码被更新了，那么它会在 currentTime（可能与之前的 currentTime不同）时刻延长timeToLive秒。
+ *
+ * 请你实现AuthenticationManager类：
+ *
+ * AuthenticationManager(int timeToLive)构造AuthenticationManager并设置timeToLive参数。
+ * generate(string tokenId, int currentTime)给定 tokenId，在当前时间currentTime 生成一个新的验证码。
+ * renew(string tokenId, int currentTime)将给定 tokenId且 未过期的验证码在 currentTime时刻更新。如果给定tokenId对应的验证码不存在或已过期，请你忽略该操作，不会有任何更新操作发生。
+ * countUnexpiredTokens(int currentTime)请返回在给定currentTime时刻，未过期的验证码数目。
+ * 如果一个验证码在时刻t过期，且另一个操作恰好在时刻t发生（renew或者countUnexpiredTokens操作），过期事件优先于其他操作。
+ *
  * 来源：力扣（LeetCode）
- * 链接：https://leetcode.cn/problems/remove-sub-folders-from-the-filesystem
+ * 链接：https://leetcode.cn/problems/design-authentication-manager
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
