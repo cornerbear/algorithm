@@ -20,6 +20,23 @@ public class ListNode {
         this.next = next;
     }
 
+    public static ListNode create(int[] ints) {
+        ListNode listNode = new ListNode();
+        ListNode head = listNode;
+        for (int i : ints) {
+            listNode.next = new ListNode(i);
+            listNode = listNode.next;
+        }
+        return head.next;
+    }
+
+    public static void print(ListNode listNode) {
+        while (listNode != null) {
+            System.out.println(listNode.val);
+            listNode = listNode.next;
+        }
+    }
+
     public static void main(String[] args) {
         ListNode start = new ListNode(1);
         start.next = new ListNode(2);
